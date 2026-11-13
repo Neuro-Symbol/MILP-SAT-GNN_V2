@@ -1,0 +1,504 @@
+2026-10-30 15:25:08,615 INFO    MainThread:49106 [wandb_setup.py:_flush():81] Current SDK version is 0.27.2
+2026-10-30 15:25:08,615 INFO    MainThread:49106 [wandb_setup.py:_flush():81] Configure stats pid to 49106
+2026-10-30 15:25:08,615 INFO    MainThread:49106 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-10-30 15:25:08,615 INFO    MainThread:49106 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /Users/ricca/Development/milp-sat-gnn/src_best/wandb/run-20261030_152508-cm7v89xc/logs/debug.log
+2026-10-30 15:25:08,615 INFO    MainThread:49106 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /Users/ricca/Development/milp-sat-gnn/src_best/wandb/run-20261030_152508-cm7v89xc/logs/debug-internal.log
+2026-10-30 15:25:08,616 INFO    MainThread:49106 [wandb_init.py:init():766] calling init triggers
+2026-10-30 15:25:08,616 INFO    MainThread:49106 [wandb_init.py:init():771] wandb.init called with sweep_config: {}
+config: {'model': 'gcnpolicy2', 'data_dir': '../G4SATBench/import/20000/easy/3-sat/processed/rf-0.0-n-1', 'data_split': '../G4SATBench/import/20000/easy/3-sat/subset-20000-seed-3/fold_0', 'output_dir': '../G4SATBench/import/20000/easy/3-sat/output/e128-rl32-mlp1-20261030_152507', 'seed': 987, 'shuffle_seed': 111, 'stratified_batches': True, 'device': 'mps', 'embedding_size': 128, 'gcnpolicy_n_layers': 1, 'gcnpolicy_n_iterations': 32, 'gcnpolicy_aggregation': 'sum', 'bip_layer_anticipate_mp': True, 'bip_conv_order': 'cons-vars', 'bip_conv_append_activation': False, 'force_bias_value': False, 'gcn_final_graph_op': 'mean', 'best_model_path': 'best_model.pt', 'final_model_path': 'final_model.pt', 'model_selection_mode': 'accuracy_loss', 'model_selection_measure': 'accuracy', 'model_selection_threshold': 0.05, 'lr_scheduler_type': 'ReduceLROnPlateau', 'loss_function': 'bce', 'lr': 0.0001, 'bs': 32, 'epochs': 100, 'clip_grad_norm': None, 'weight_decay': None, 'mlp_n_hidden_layers': 1, 'output_mlp_n_hidden_layers': 1, 'dropout': 0.0, 'classification_method': 'node', 'formula_eval_method': 'unsup2', 'pretraining': 0, 'track_formulas': 'every_best', 'self_attention_type': 'none', 'cross_attention_type': 'none', 'cross_attention_heads': 4, 'num_latents': 64, 'recurrent_cell_type': 'lstm', 'dev_mode': False, 'overwrite': True, 'timestamp_output': False, 'use_wandb': True, 'do_test': True, 'test_bs': None, 'test_device': None, 'gcnpolicy_test_iterations': None, '_wandb': {}}
+2026-10-30 15:25:08,616 INFO    MainThread:49106 [wandb_init.py:init():814] starting backend
+2026-10-30 15:25:08,616 INFO    MainThread:49106 [wandb_init.py:init():829] sending inform_init request
+2026-10-30 15:25:08,962 INFO    MainThread:49106 [wandb_init.py:init():834] backend started and connected
+2026-10-30 15:25:08,964 INFO    MainThread:49106 [wandb_init.py:init():904] updated telemetry
+2026-10-30 15:25:08,981 INFO    MainThread:49106 [wandb_init.py:init():927] communicating run to backend with 90.0 second timeout
+2026-10-30 15:25:09,637 INFO    MainThread:49106 [wandb_init.py:init():972] starting run threads in backend
+2026-10-30 15:25:09,675 INFO    MainThread:49106 [wandb_run.py:_console_start():2523] atexit reg
+2026-10-30 15:25:09,676 INFO    MainThread:49106 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-10-30 15:25:09,676 INFO    MainThread:49106 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-10-30 15:25:09,676 INFO    MainThread:49106 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-10-30 15:25:09,677 INFO    MainThread:49106 [wandb_init.py:init():1010] run started, returning control to user process
+2026-10-30 15:51:12,966 INFO    wandb-AsyncioManager-main:49106 [service_client.py:_forward_responses():122] [no run ID] Reached EOF.
+2026-10-30 15:51:12,966 INFO    wandb-AsyncioManager-main:49106 [mailbox.py:close():154] [no run ID] Closing mailbox, abandoning 2 handles.
+2026-10-30 15:51:12,967 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/run_messages.py", line 90, in loop
+    await asyncio_compat.race(
+    ...<2 lines>...
+    )
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_compat.py", line 278, in race
+    async with open_task_group(race=True) as tg:
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 221, in __aexit__
+    await anext(self.gen)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_compat.py", line 240, in open_task_group
+    await task_group._wait_all(race=race, timeout=exit_timeout)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_compat.py", line 180, in _wait_all
+    raise exc
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/run_messages.py", line 113, in _print_all
+    result = await handle.wait_async(timeout=None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/mailbox/mailbox_handle.py", line 127, in wait_async
+    response = await self._handle.wait_async(timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/mailbox/response_handle.py", line 123, in wait_async
+    raise HandleAbandonedError()
+wandb.sdk.mailbox.mailbox_handle.HandleAbandonedError
+2026-10-30 15:51:13,369 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,377 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,380 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,381 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,382 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,382 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,383 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,384 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,384 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,384 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,385 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,385 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,385 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,386 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,386 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,386 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,387 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,387 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,387 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,388 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,388 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,388 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,389 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,389 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,389 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,390 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-10-30 15:51:13,390 ERROR   wandb-AsyncioManager-main:49106 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

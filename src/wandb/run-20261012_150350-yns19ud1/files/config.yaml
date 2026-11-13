@@ -1,0 +1,208 @@
+_wandb:
+    value:
+        cli_version: 0.27.2
+        e:
+            v77eoocqtdd3sddn1krgdy8frri3l3qb:
+                apple:
+                    ecpuCores: 6
+                    gpuCores: 10
+                    macModel: Mac17,2
+                    memoryGb: 32
+                    name: Apple M5
+                    pcpuCores: 4
+                    ramTotalBytes: "34359738368"
+                    swapTotalBytes: "4294967296"
+                args:
+                    - --model
+                    - gcnpolicy2
+                    - --data_dir
+                    - ../G4SATBench/import/2000/easy/3-sat/processed/rf-0.0-n-1
+                    - --data_split
+                    - ../G4SATBench/import/2000/easy/3-sat/subset-2000-seed-3/fold_0
+                    - --shuffle_seed
+                    - "111"
+                    - --output_dir
+                    - ../G4SATBench/import/2000/easy/3-sat/output
+                    - --stratified_batches
+                    - "yes"
+                    - --embedding_size
+                    - "128"
+                    - --gcnpolicy_n_layers
+                    - "1"
+                    - --gcnpolicy_n_iterations
+                    - "32"
+                    - --mlp_n_hidden_layers
+                    - "1"
+                    - --output_mlp_n_hidden_layers
+                    - "1"
+                    - --epochs
+                    - "100"
+                    - --bs
+                    - "32"
+                    - --loss_function
+                    - bce
+                    - --lr_scheduler_type
+                    - ReduceLROnPlateau
+                    - --do_test
+                    - "yes"
+                    - --device
+                    - mps
+                    - --overwrite
+                    - "yes"
+                    - --track_formulas
+                    - every_best
+                    - --classification_method
+                    - node
+                    - --formula_eval_method
+                    - unsup2
+                    - --cross_attention_type
+                    - none
+                    - --self_attention_type
+                    - none
+                    - --use_wandb
+                    - "True"
+                codePath: src/E_train_model.py
+                codePathLocal: E_train_model.py
+                cpu_count: 10
+                cpu_count_logical: 10
+                disk:
+                    /:
+                        total: "1995165736960"
+                        used: "368734928896"
+                email: riccardo.paoli@isti.cnr.it
+                executable: /Users/ricca/Development/milp-sat-gnn/.venv/bin/python
+                git:
+                    commit: f13e4e2151b2ad4610e5b5a2379660bf1cd56027
+                    remote: https://github.com/Neuro-Symbol/milp-sat-gnn-2026.git
+                host: eduroam-55-106.pi.cnr.it
+                memory:
+                    total: "34359738368"
+                os: macOS-26.6.2-arm64-arm-64bit-Mach-O
+                program: /Users/ricca/Development/milp-sat-gnn/src/E_train_model.py
+                python: CPython 3.14.5
+                root: /Users/ricca/Development/milp-sat-gnn/src
+                startedAt: "2026-10-12T13:03:50.836486Z"
+                writerId: v77eoocqtdd3sddn1krgdy8frri3l3qb
+        m: []
+        python_version: 3.14.5
+        t:
+            "1":
+                - 1
+                - 5
+                - 49
+                - 51
+                - 53
+                - 77
+            "2":
+                - 1
+                - 5
+                - 49
+                - 51
+                - 53
+                - 77
+            "3":
+                - 13
+                - 16
+                - 61
+            "4": 3.14.5
+            "5": 0.27.2
+            "12": 0.27.2
+            "13": darwin-arm64
+best_model_path:
+    value: best_model.pt
+bip_conv_append_activation:
+    value: false
+bip_conv_order:
+    value: cons-vars
+bip_layer_anticipate_mp:
+    value: true
+bs:
+    value: 32
+classification_method:
+    value: node
+clip_grad_norm:
+    value: null
+cross_attention_heads:
+    value: 4
+cross_attention_type:
+    value: none
+data_dir:
+    value: ../G4SATBench/import/2000/easy/3-sat/processed/rf-0.0-n-1
+data_split:
+    value: ../G4SATBench/import/2000/easy/3-sat/subset-2000-seed-3/fold_0
+dev_mode:
+    value: false
+device:
+    value: mps
+do_test:
+    value: true
+dropout:
+    value: 0
+embedding_size:
+    value: 128
+epochs:
+    value: 100
+final_model_path:
+    value: final_model.pt
+force_bias_value:
+    value: false
+formula_eval_method:
+    value: unsup2
+gcn_final_graph_op:
+    value: mean
+gcnpolicy_aggregation:
+    value: sum
+gcnpolicy_n_iterations:
+    value: 32
+gcnpolicy_n_layers:
+    value: 1
+gcnpolicy_test_iterations:
+    value: null
+loss_function:
+    value: bce
+lr:
+    value: 0.0001
+lr_scheduler_type:
+    value: ReduceLROnPlateau
+mlp_n_hidden_layers:
+    value: 1
+model:
+    value: gcnpolicy2
+model_selection_measure:
+    value: accuracy
+model_selection_mode:
+    value: standard
+model_selection_threshold:
+    value: 0.05
+num_latents:
+    value: 64
+output_dir:
+    value: ../G4SATBench/import/2000/easy/3-sat/output/e128-rl32-mlp1-20261012_150350
+output_mlp_n_hidden_layers:
+    value: 1
+overwrite:
+    value: true
+pretraining:
+    value: 0
+recurrent_cell_type:
+    value: lstm
+seed:
+    value: 987
+self_attention_type:
+    value: none
+shuffle_seed:
+    value: 111
+stratified_batches:
+    value: true
+test_bs:
+    value: null
+test_device:
+    value: null
+timestamp_output:
+    value: false
+track_formulas:
+    value: every_best
+use_wandb:
+    value: true
+weight_decay:
+    value: null

@@ -1,0 +1,15 @@
+{"time":"2026-10-21T11:11:20.590232+02:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-10-21T11:11:20.591765+02:00","level":"INFO","msg":"stream: starting","core version":"0.27.2"}
+{"time":"2026-10-21T11:11:20.897837+02:00","level":"INFO","msg":"stream: created new stream","id":"pj1gh9ah"}
+{"time":"2026-10-21T11:11:20.898007+02:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-10-21T11:11:20.89802+02:00","level":"INFO","msg":"writer: started","stream_id":"pj1gh9ah"}
+{"time":"2026-10-21T11:11:20.898053+02:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-10-21T11:11:20.898118+02:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-10-21T11:11:21.769916+02:00","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":0,"console_lines":1}
+{"time":"2026-10-21T11:11:22.057153+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-21T11:11:36.771427+02:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":0,"history_lines":14,"events_offset":0,"events_lines":2,"console_offset":1,"console_lines":620,"uploaded_len":2}
+{"time":"2026-10-21T11:11:37.334318+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-21T11:11:49.128595+02:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":2463}
+{"time":"2026-10-21T11:11:49.128726+02:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-10-21T11:11:51.771209+02:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":14,"history_lines":13,"events_offset":2,"events_lines":2,"console_offset":620,"console_lines":462}
+{"time":"2026-10-21T11:11:52.035297+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}

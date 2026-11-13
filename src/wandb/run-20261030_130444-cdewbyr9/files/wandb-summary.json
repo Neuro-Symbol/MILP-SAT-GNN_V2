@@ -1,0 +1,1 @@
+{"_runtime":39.769581167,"val/accuracy":0.02,"val/loss":187.0513072013855,"_timestamp":1.7933619156806982e+09,"val/recall":0.02,"val/f1":0.0392156862745098,"_wandb":{"runtime":39},"val/msr":0.98,"val/precision":1,"_step":1,"train/loss":260.0222943115234}

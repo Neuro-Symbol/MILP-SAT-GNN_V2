@@ -1,0 +1,17 @@
+{"time":"2026-10-21T11:03:13.266255+02:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-10-21T11:03:13.26816+02:00","level":"INFO","msg":"stream: starting","core version":"0.27.2"}
+{"time":"2026-10-21T11:03:13.599373+02:00","level":"INFO","msg":"stream: created new stream","id":"feyiz506"}
+{"time":"2026-10-21T11:03:13.599596+02:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-10-21T11:03:13.599698+02:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-10-21T11:03:13.599713+02:00","level":"INFO","msg":"writer: started","stream_id":"feyiz506"}
+{"time":"2026-10-21T11:03:13.599742+02:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-10-21T11:03:14.151822+02:00","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":0,"console_lines":1}
+{"time":"2026-10-21T11:03:14.449732+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-21T11:03:29.153534+02:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":0,"history_lines":11,"events_offset":0,"events_lines":2,"console_offset":1,"console_lines":552,"uploaded_len":2}
+{"time":"2026-10-21T11:03:29.433267+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-21T11:03:44.153288+02:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":11,"history_lines":17,"events_offset":2,"events_lines":2,"console_offset":552,"console_lines":563}
+{"time":"2026-10-21T11:03:44.604884+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-21T11:03:59.154086+02:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":28,"history_lines":16,"events_offset":4,"events_lines":2,"console_offset":1114,"console_lines":494}
+{"time":"2026-10-21T11:03:59.446302+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-21T11:04:14.154297+02:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":44,"history_lines":17,"events_offset":6,"events_lines":2,"console_offset":1608,"console_lines":526}
+{"time":"2026-10-21T11:04:14.464756+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}

@@ -1,0 +1,966 @@
+Random seed set to 987
+dataset shape:  (2000, 9)
+Train, validation, and test sets do not overlap
+|train|=  800
+|val|=  100
+Sampler <train> (shuffle? True, seed: 111), num batches 25, last batch 0 exs
+Sampler <train> Ratios pos: 1.0, neg: 0.0 (32+0)
+TRAINING size: 800
+VALIDATION size: 100
+Dim constraints: 2
+Dim variables: 4
+Namespace(model='gcnpolicy2', data_dir='../G4SATBench/import/2000/easy/3-sat/processed/rf-0.0-n-1', data_split='../G4SATBench/import/2000/easy/3-sat/subset-2000-seed-3/fold_0', output_dir='../G4SATBench/import/2000/easy/3-sat/output/e128-rl32-mlp1-20261030_162306', seed=987, shuffle_seed=111, stratified_batches=True, device='mps', embedding_size=128, gcnpolicy_n_layers=1, gcnpolicy_n_iterations=32, gcnpolicy_aggregation='sum', bip_layer_anticipate_mp=True, bip_conv_order='cons-vars', bip_conv_append_activation=False, force_bias_value=False, gcn_final_graph_op='mean', best_model_path='best_model.pt', final_model_path='final_model.pt', model_selection_mode='accuracy_loss', model_selection_measure='accuracy', model_selection_threshold=0.05, lr_scheduler_type='ReduceLROnPlateau', loss_function='unsup2', lr=0.0001, bs=32, epochs=100, clip_grad_norm=None, weight_decay=None, mlp_n_hidden_layers=1, output_mlp_n_hidden_layers=1, dropout=0.0, classification_method='node', formula_eval_method='unsup2', pretraining=0, track_formulas='every_best', self_attention_type='none', cross_attention_type='none', cross_attention_heads=4, num_latents=64, recurrent_cell_type='lstm', dev_mode=False, overwrite=True, timestamp_output=False, use_wandb=True, do_test=True, test_bs=None, test_device=None, gcnpolicy_test_iterations=None, n_cons_f=2, n_var_f=4)
+args saved to: ../G4SATBench/import/2000/easy/3-sat/output/e128-rl32-mlp1-20261030_162306/args.yaml
+Building ext model
+---> BipartiteLayer: actual parameter 'bias' is ignored
+--------------------
+- GCNPolicy2:
+	 - n_cons_f: 2
+	 - n_edge_f: 1
+	 - n_var_f: 4
+	 - emb_size: 128
+	 - n_layers: 1
+	 - n_iterations: 32
+	 - mlp_n_hidden_layers: 1
+	 - output_mlp_n_hidden_layers: 1
+	 - activation: leaky_relu
+	 - aggregation: sum
+	 - graph_op: mean
+	 - anticipate_mp: True
+	 - conv_order: cons-vars
+	 - classification_method: node
+	 - dropout: 0.0
+--------------------
+** SUMMARY **
+===========================================================================
+Layer (type:depth-idx)                             Param #
+===========================================================================
+GCNPolicy2                                         --
+├─Sequential: 1-1                                  --
+│    └─Linear: 2-1                                 384
+├─Identity: 1-2                                    --
+├─Sequential: 1-3                                  --
+│    └─Linear: 2-2                                 640
+├─Linear: 1-4                                      256
+├─ModuleList: 1-5                                  --
+│    └─BipartiteLayer: 2-3                         --
+│    │    └─BipartiteGraphConvolution_v2: 3-1      164,992
+│    │    └─BipartiteGraphConvolution_v2: 3-2      164,992
+├─LayerNormBasicLSTMCell: 1-6                      --
+│    └─Linear: 2-4                                 66,048
+│    └─Linear: 2-5                                 65,536
+│    └─LayerNorm: 2-6                              256
+│    └─LayerNorm: 2-7                              256
+│    └─LayerNorm: 2-8                              256
+│    └─LayerNorm: 2-9                              256
+│    └─LayerNorm: 2-10                             256
+├─LayerNormBasicLSTMCell: 1-7                      --
+│    └─Linear: 2-11                                66,048
+│    └─Linear: 2-12                                65,536
+│    └─LayerNorm: 2-13                             256
+│    └─LayerNorm: 2-14                             256
+│    └─LayerNorm: 2-15                             256
+│    └─LayerNorm: 2-16                             256
+│    └─LayerNorm: 2-17                             256
+├─Sequential: 1-8                                  --
+│    └─Linear: 2-18                                147,840
+│    └─LeakyReLU: 2-19                             --
+│    └─Linear: 2-20                                385
+===========================================================================
+Total params: 745,217
+Trainable params: 745,217
+Non-trainable params: 0
+===========================================================================
+=================================================================
+Layer (type:depth-idx)                   Param #
+=================================================================
+BipartiteLayer                           --
+├─BipartiteGraphConvolution_v2: 1-1      --
+│    └─SumAggregation: 2-1               --
+│    └─Sequential: 2-2                   --
+│    │    └─Linear: 3-1                  16,512
+│    │    └─LeakyReLU: 3-2               --
+│    │    └─Linear: 3-3                  16,512
+│    └─Identity: 2-3                     --
+│    └─Sequential: 2-4                   --
+│    │    └─Linear: 3-4                  16,512
+│    │    └─LeakyReLU: 3-5               --
+│    │    └─Linear: 3-6                  16,512
+│    └─Sequential: 2-5                   --
+│    │    └─Linear: 3-7                  16,512
+│    │    └─LeakyReLU: 3-8               --
+│    │    └─Linear: 3-9                  16,512
+│    └─Sequential: 2-6                   --
+│    │    └─Linear: 3-10                 16,512
+│    │    └─LeakyReLU: 3-11              --
+│    │    └─Linear: 3-12                 16,512
+│    └─Linear: 2-7                       32,896
+├─BipartiteGraphConvolution_v2: 1-2      --
+│    └─SumAggregation: 2-8               --
+│    └─Sequential: 2-9                   --
+│    │    └─Linear: 3-13                 16,512
+│    │    └─LeakyReLU: 3-14              --
+│    │    └─Linear: 3-15                 16,512
+│    └─Identity: 2-10                    --
+│    └─Sequential: 2-11                  --
+│    │    └─Linear: 3-16                 16,512
+│    │    └─LeakyReLU: 3-17              --
+│    │    └─Linear: 3-18                 16,512
+│    └─Sequential: 2-12                  --
+│    │    └─Linear: 3-19                 16,512
+│    │    └─LeakyReLU: 3-20              --
+│    │    └─Linear: 3-21                 16,512
+│    └─Sequential: 2-13                  --
+│    │    └─Linear: 3-22                 16,512
+│    │    └─LeakyReLU: 3-23              --
+│    │    └─Linear: 3-24                 16,512
+│    └─Linear: 2-14                      32,896
+=================================================================
+Total params: 329,984
+Trainable params: 329,984
+Non-trainable params: 0
+=================================================================
+mps
+[tracker] Formula ID 1817 trovata. Risolti 2 modelli esatti su PySAT.
+E 01/100 - Best at -1 with val_acc -inf. Train loss: inf. Validation loss: inf: 100%|█| 25/25 [00:14<00:00,  1.77it
+[FormulaTracker] formula 1817: 2 modelli scritti in ../G4SATBench/import/2000/easy/3-sat/output/e128-rl32-mlp1-20261030_162306/tracking_formula_1817/formula_1817_message_passing.xlsx
+Allocated MPS memory: 2.99 MB
+MPS Driver Total: 8.86 MB
+-----------------------------------------
+Epoch 1/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 2.99 MB
+MPS Driver Total: 8.86 MB
+[RAM] Peak RSS: 635.23 MB
+-----------------------------------------
+
+-------> Epoch 1/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00,  4.22it/s]
+/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/sklearn/metrics/_classification.py:1879: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |      100 |        0 |
+* VALIDATION METRICS
+	-  accuracy: 0.0
+	-  msr: 1.0
+	-  precision: 0.0
+	-  recall: 0.0
+	-  f1: 0.0
+New best at epoch 1 - mode: accuracy_loss
+
+-----------------------------------------
+Epoch 2/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.71 MB
+MPS Driver Total: 263.91 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 02/100 - Best at 01 with val_acc 0.000. Train loss: 354.391. Validation loss: 226.124: 100%|█| 25/25 [00:14<00:00
+
+-------> Epoch 2/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  4.00it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       97 |        3 |
+* VALIDATION METRICS
+	-  accuracy: 0.03
+	-  msr: 0.97
+	-  precision: 1.0
+	-  recall: 0.03
+	-  f1: 0.05825242718446602
+New best at epoch 2 - mode: accuracy_loss
+
+-----------------------------------------
+Epoch 3/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.71 MB
+MPS Driver Total: 247.14 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 03/100 - Best at 02 with val_acc 0.030. Train loss: 256.824. Validation loss: 178.523: 100%|█| 25/25 [00:15<00:00
+
+-------> Epoch 3/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.71it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       94 |        6 |
+* VALIDATION METRICS
+	-  accuracy: 0.06
+	-  msr: 0.94
+	-  precision: 1.0
+	-  recall: 0.06
+	-  f1: 0.11320754716981132
+New best at epoch 3 - mode: accuracy_loss
+
+-----------------------------------------
+Epoch 4/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 251.33 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 04/100 - Best at 03 with val_acc 0.060. Train loss: 219.420. Validation loss: 167.260: 100%|█| 25/25 [00:15<00:00
+
+-------> Epoch 4/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00,  4.12it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       99 |        1 |
+* VALIDATION METRICS
+	-  accuracy: 0.01
+	-  msr: 0.99
+	-  precision: 1.0
+	-  recall: 0.01
+	-  f1: 0.019801980198019802
+
+-----------------------------------------
+Epoch 5/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 289.08 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 05/100 - Best at 03 with val_acc 0.060. Train loss: 205.345. Validation loss: 204.176: 100%|█| 25/25 [00:14<00:00
+
+-------> Epoch 5/100 - TRAIN Prediction
+Predicting: 100%|██████████████████████████████████████████████████████████████████| 25/25 [00:07<00:00,  3.33it/s]
+(prediction on training set) 	-  accuracy: 0.0825
+(prediction on training set) 	-  msr: 0.9175
+(prediction on training set) 	-  precision: 1.0
+(prediction on training set) 	-  recall: 0.0825
+(prediction on training set) 	-  f1: 0.15242494226327943
+-------> Epoch 5/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.85it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       96 |        4 |
+* VALIDATION METRICS
+	-  accuracy: 0.04
+	-  msr: 0.96
+	-  precision: 1.0
+	-  recall: 0.04
+	-  f1: 0.07692307692307693
+
+-----------------------------------------
+Epoch 6/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.73 MB
+MPS Driver Total: 295.37 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 06/100 - Best at 03 with val_acc 0.060. Train loss: 229.204. Validation loss: 158.494: 100%|█| 25/25 [00:15<00:00
+
+-------> Epoch 6/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.44it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       88 |       12 |
+* VALIDATION METRICS
+	-  accuracy: 0.12
+	-  msr: 0.88
+	-  precision: 1.0
+	-  recall: 0.12
+	-  f1: 0.21428571428571427
+New best at epoch 6 - mode: accuracy_loss
+
+-----------------------------------------
+Epoch 7/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 310.05 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 07/100 - Best at 06 with val_acc 0.120. Train loss: 196.237. Validation loss: 154.684: 100%|█| 25/25 [00:16<00:00
+
+-------> Epoch 7/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.08it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       88 |       12 |
+* VALIDATION METRICS
+	-  accuracy: 0.12
+	-  msr: 0.88
+	-  precision: 1.0
+	-  recall: 0.12
+	-  f1: 0.21428571428571427
+
+-----------------------------------------
+Epoch 8/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.70 MB
+MPS Driver Total: 255.52 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 08/100 - Best at 06 with val_acc 0.120. Train loss: 199.165. Validation loss: 172.243: 100%|█| 25/25 [00:16<00:00
+
+-------> Epoch 8/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.07it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       90 |       10 |
+* VALIDATION METRICS
+	-  accuracy: 0.1
+	-  msr: 0.9
+	-  precision: 1.0
+	-  recall: 0.1
+	-  f1: 0.18181818181818182
+
+-----------------------------------------
+Epoch 9/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 293.27 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 09/100 - Best at 06 with val_acc 0.120. Train loss: 193.563. Validation loss: 168.095: 100%|█| 25/25 [00:17<00:00
+
+-------> Epoch 9/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.74it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       79 |       21 |
+* VALIDATION METRICS
+	-  accuracy: 0.21
+	-  msr: 0.79
+	-  precision: 1.0
+	-  recall: 0.21
+	-  f1: 0.34710743801652894
+New best at epoch 9 - mode: accuracy_loss
+
+-----------------------------------------
+Epoch 10/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.70 MB
+MPS Driver Total: 272.30 MB
+[RAM] Peak RSS: 1210.84 MB
+-----------------------------------------
+E 10/100 - Best at 09 with val_acc 0.210. Train loss: 201.508. Validation loss: 156.975: 100%|█| 25/25 [00:18<00:00
+
+-------> Epoch 10/100 - TRAIN Prediction
+Predicting: 100%|██████████████████████████████████████████████████████████████████| 25/25 [00:10<00:00,  2.29it/s]
+(prediction on training set) 	-  accuracy: 0.25
+(prediction on training set) 	-  msr: 0.75
+(prediction on training set) 	-  precision: 1.0
+(prediction on training set) 	-  recall: 0.25
+(prediction on training set) 	-  f1: 0.4
+-------> Epoch 10/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.59it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       79 |       21 |
+* VALIDATION METRICS
+	-  accuracy: 0.21
+	-  msr: 0.79
+	-  precision: 1.0
+	-  recall: 0.21
+	-  f1: 0.34710743801652894
+[FormulaTracker] epoca 10: 32 passi scritti in ../G4SATBench/import/2000/easy/3-sat/output/e128-rl32-mlp1-20261030_162306/tracking_formula_1817/formula_1817_message_passing.xlsx
+
+-----------------------------------------
+Epoch 11/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 286.98 MB
+[RAM] Peak RSS: 1222.45 MB
+-----------------------------------------
+E 11/100 - Best at 09 with val_acc 0.210. Train loss: 213.398. Validation loss: 168.182: 100%|█| 25/25 [00:17<00:00
+
+-------> Epoch 11/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.55it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       79 |       21 |
+* VALIDATION METRICS
+	-  accuracy: 0.21
+	-  msr: 0.79
+	-  precision: 1.0
+	-  recall: 0.21
+	-  f1: 0.34710743801652894
+
+-----------------------------------------
+Epoch 12/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.70 MB
+MPS Driver Total: 314.25 MB
+[RAM] Peak RSS: 1230.56 MB
+-----------------------------------------
+E 12/100 - Best at 09 with val_acc 0.210. Train loss: 195.340. Validation loss: 168.854: 100%|█| 25/25 [00:17<00:00
+
+-------> Epoch 12/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.13it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       80 |       20 |
+* VALIDATION METRICS
+	-  accuracy: 0.2
+	-  msr: 0.8
+	-  precision: 1.0
+	-  recall: 0.2
+	-  f1: 0.3333333333333333
+
+-----------------------------------------
+Epoch 13/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 314.25 MB
+[RAM] Peak RSS: 1238.38 MB
+-----------------------------------------
+E 13/100 - Best at 09 with val_acc 0.210. Train loss: 189.321. Validation loss: 152.558: 100%|█| 25/25 [00:18<00:00
+
+-------> Epoch 13/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.45it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       72 |       28 |
+* VALIDATION METRICS
+	-  accuracy: 0.28
+	-  msr: 0.72
+	-  precision: 1.0
+	-  recall: 0.28
+	-  f1: 0.4375
+New best at epoch 13 - mode: accuracy_loss
+
+-----------------------------------------
+Epoch 14/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 272.30 MB
+[RAM] Peak RSS: 1248.95 MB
+-----------------------------------------
+E 14/100 - Best at 13 with val_acc 0.280. Train loss: 189.435. Validation loss: 157.613: 100%|█| 25/25 [00:17<00:00
+
+-------> Epoch 14/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.71it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       96 |        4 |
+* VALIDATION METRICS
+	-  accuracy: 0.04
+	-  msr: 0.96
+	-  precision: 1.0
+	-  recall: 0.04
+	-  f1: 0.07692307692307693
+
+-----------------------------------------
+Epoch 15/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.66 MB
+MPS Driver Total: 276.50 MB
+[RAM] Peak RSS: 1256.14 MB
+-----------------------------------------
+E 15/100 - Best at 13 with val_acc 0.280. Train loss: 200.122. Validation loss: 160.799: 100%|█| 25/25 [00:15<00:00
+
+-------> Epoch 15/100 - TRAIN Prediction
+Predicting: 100%|██████████████████████████████████████████████████████████████████| 25/25 [00:09<00:00,  2.77it/s]
+(prediction on training set) 	-  accuracy: 0.18625
+(prediction on training set) 	-  msr: 0.81375
+(prediction on training set) 	-  precision: 1.0
+(prediction on training set) 	-  recall: 0.18625
+(prediction on training set) 	-  f1: 0.31401475237091675
+-------> Epoch 15/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  3.15it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       79 |       21 |
+* VALIDATION METRICS
+	-  accuracy: 0.21
+	-  msr: 0.79
+	-  precision: 1.0
+	-  recall: 0.21
+	-  f1: 0.34710743801652894
+
+-----------------------------------------
+Epoch 16/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.71 MB
+MPS Driver Total: 278.59 MB
+[RAM] Peak RSS: 1267.72 MB
+-----------------------------------------
+E 16/100 - Best at 13 with val_acc 0.280. Train loss: 184.523. Validation loss: 136.051: 100%|█| 25/25 [00:17<00:00
+
+-------> Epoch 16/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.51it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       75 |       25 |
+* VALIDATION METRICS
+	-  accuracy: 0.25
+	-  msr: 0.75
+	-  precision: 1.0
+	-  recall: 0.25
+	-  f1: 0.4
+
+-----------------------------------------
+Epoch 17/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.70 MB
+MPS Driver Total: 297.47 MB
+[RAM] Peak RSS: 1275.81 MB
+-----------------------------------------
+E 17/100 - Best at 13 with val_acc 0.280. Train loss: 163.381. Validation loss: 134.228: 100%|█| 25/25 [00:19<00:00
+
+-------> Epoch 17/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.44it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       69 |       31 |
+* VALIDATION METRICS
+	-  accuracy: 0.31
+	-  msr: 0.69
+	-  precision: 1.0
+	-  recall: 0.31
+	-  f1: 0.4732824427480916
+New best at epoch 17 - mode: accuracy_loss
+
+-----------------------------------------
+Epoch 18/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.68 MB
+MPS Driver Total: 280.69 MB
+[RAM] Peak RSS: 1287.05 MB
+-----------------------------------------
+E 18/100 - Best at 17 with val_acc 0.310. Train loss: 165.389. Validation loss: 134.907: 100%|█| 25/25 [00:20<00:00
+
+-------> Epoch 18/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.09it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       72 |       28 |
+* VALIDATION METRICS
+	-  accuracy: 0.28
+	-  msr: 0.72
+	-  precision: 1.0
+	-  recall: 0.28
+	-  f1: 0.4375
+
+-----------------------------------------
+Epoch 19/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.73 MB
+MPS Driver Total: 293.27 MB
+[RAM] Peak RSS: 1299.28 MB
+-----------------------------------------
+E 19/100 - Best at 17 with val_acc 0.310. Train loss: 161.565. Validation loss: 131.432: 100%|█| 25/25 [00:20<00:00
+
+-------> Epoch 19/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.48it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       84 |       16 |
+* VALIDATION METRICS
+	-  accuracy: 0.16
+	-  msr: 0.84
+	-  precision: 1.0
+	-  recall: 0.16
+	-  f1: 0.27586206896551724
+
+-----------------------------------------
+Epoch 20/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 289.08 MB
+[RAM] Peak RSS: 1310.64 MB
+-----------------------------------------
+E 20/100 - Best at 17 with val_acc 0.310. Train loss: 159.664. Validation loss: 136.420: 100%|█| 25/25 [00:20<00:00
+
+-------> Epoch 20/100 - TRAIN Prediction
+Predicting: 100%|██████████████████████████████████████████████████████████████████| 25/25 [00:13<00:00,  1.83it/s]
+(prediction on training set) 	-  accuracy: 0.27625
+(prediction on training set) 	-  msr: 0.72375
+(prediction on training set) 	-  precision: 1.0
+(prediction on training set) 	-  recall: 0.27625
+(prediction on training set) 	-  f1: 0.43290891283055827
+-------> Epoch 20/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.27it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       70 |       30 |
+* VALIDATION METRICS
+	-  accuracy: 0.3
+	-  msr: 0.7
+	-  precision: 1.0
+	-  recall: 0.3
+	-  f1: 0.46153846153846156
+[FormulaTracker] epoca 20: 32 passi scritti in ../G4SATBench/import/2000/easy/3-sat/output/e128-rl32-mlp1-20261030_162306/tracking_formula_1817/formula_1817_message_passing.xlsx
+
+-----------------------------------------
+Epoch 21/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.71 MB
+MPS Driver Total: 261.82 MB
+[RAM] Peak RSS: 1334.06 MB
+-----------------------------------------
+E 21/100 - Best at 17 with val_acc 0.310. Train loss: 143.332. Validation loss: 113.845: 100%|█| 25/25 [00:19<00:00
+
+-------> Epoch 21/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.31it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       70 |       30 |
+* VALIDATION METRICS
+	-  accuracy: 0.3
+	-  msr: 0.7
+	-  precision: 1.0
+	-  recall: 0.3
+	-  f1: 0.46153846153846156
+
+-----------------------------------------
+Epoch 22/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.70 MB
+MPS Driver Total: 293.27 MB
+[RAM] Peak RSS: 1345.17 MB
+-----------------------------------------
+E 22/100 - Best at 17 with val_acc 0.310. Train loss: 143.822. Validation loss: 106.656: 100%|█| 25/25 [00:21<00:00
+
+-------> Epoch 22/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.12it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       70 |       30 |
+* VALIDATION METRICS
+	-  accuracy: 0.3
+	-  msr: 0.7
+	-  precision: 1.0
+	-  recall: 0.3
+	-  f1: 0.46153846153846156
+
+-----------------------------------------
+Epoch 23/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.67 MB
+MPS Driver Total: 289.08 MB
+[RAM] Peak RSS: 1358.44 MB
+-----------------------------------------
+E 23/100 - Best at 17 with val_acc 0.310. Train loss: 126.042. Validation loss: 103.222: 100%|█| 25/25 [00:21<00:00
+
+-------> Epoch 23/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.05it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       66 |       34 |
+* VALIDATION METRICS
+	-  accuracy: 0.34
+	-  msr: 0.6599999999999999
+	-  precision: 1.0
+	-  recall: 0.34
+	-  f1: 0.5074626865671642
+New best at epoch 23 - mode: accuracy_loss
+
+-----------------------------------------
+Epoch 24/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.71 MB
+MPS Driver Total: 310.05 MB
+[RAM] Peak RSS: 1372.30 MB
+-----------------------------------------
+E 24/100 - Best at 23 with val_acc 0.340. Train loss: 123.095. Validation loss: 100.446: 100%|█| 25/25 [00:20<00:00
+
+-------> Epoch 24/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.40it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       70 |       30 |
+* VALIDATION METRICS
+	-  accuracy: 0.3
+	-  msr: 0.7
+	-  precision: 1.0
+	-  recall: 0.3
+	-  f1: 0.46153846153846156
+
+-----------------------------------------
+Epoch 25/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 322.63 MB
+[RAM] Peak RSS: 1384.03 MB
+-----------------------------------------
+E 25/100 - Best at 23 with val_acc 0.340. Train loss: 132.504. Validation loss: 108.779: 100%|█| 25/25 [00:21<00:00
+
+-------> Epoch 25/100 - TRAIN Prediction
+Predicting: 100%|██████████████████████████████████████████████████████████████████| 25/25 [00:13<00:00,  1.92it/s]
+(prediction on training set) 	-  accuracy: 0.25125
+(prediction on training set) 	-  msr: 0.74875
+(prediction on training set) 	-  precision: 1.0
+(prediction on training set) 	-  recall: 0.25125
+(prediction on training set) 	-  f1: 0.4015984015984016
+-------> Epoch 25/100 - VALIDATION Prediction
+Predicting: 100%|████████████████████████████████████████████████████████████████████| 4/4 [00:01<00:00,  2.23it/s]
+|    |   Pred 0 |   Pred 1 |
+|---:|---------:|---------:|
+|  0 |        0 |        0 |
+|  1 |       77 |       23 |
+* VALIDATION METRICS
+	-  accuracy: 0.23
+	-  msr: 0.77
+	-  precision: 1.0
+	-  recall: 0.23
+	-  f1: 0.37398373983739835
+
+-----------------------------------------
+Epoch 26/100 - START
+Training set: 800
+Validation set: 100
+Batch size: 32
+Number of batches: 25
+Using loss: unsup2
+Using aggregation: sum
+Using scheduler: True
+Scheduler type: ReduceLROnPlateau
+Learning rate:  0.0001
+Allocated MPS memory: 10.69 MB
+MPS Driver Total: 295.37 MB
+[RAM] Peak RSS: 1407.14 MB
+-----------------------------------------
+E 26/100 - Best at 23 with val_acc 0.340. Train loss: 120.031. Validation loss: 110.076:  32%|▎| 8/25 [00:06<00:14,
+
+Training - elapsed time: 9 minutes and 26.15 seconds
+Traceback (most recent call last):
+  File "/Users/ricca/Development/milp-sat-gnn/src_best/E_train_model.py", line 289, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/Users/ricca/Development/milp-sat-gnn/src_best/E_train_model.py", line 182, in main
+    results = train_model(
+        model,
+    ...<17 lines>...
+        track_formulas=args.track_formulas
+      )  # conf["model"])
+  File "/Users/ricca/Development/milp-sat-gnn/src_best/learning.py", line 696, in train_model
+    out = model(batch)
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/ricca/Development/milp-sat-gnn/src_best/learners/models.py", line 379, in forward
+    keep_c = solved[batch["left"].batch].unsqueeze(-1)
+                    ~~~~~^^^^^^^^
+  File "/Users/ricca/Development/milp-sat-gnn/.venv/lib/python3.14/site-packages/torch_geometric/data/batch.py", line 173, in __getitem__
+    def __getitem__(self, idx: Union[int, np.integer, str, IndexType]) -> Any:
+
+KeyboardInterrupt

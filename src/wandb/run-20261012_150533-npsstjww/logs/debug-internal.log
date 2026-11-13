@@ -1,0 +1,11 @@
+{"time":"2026-10-12T15:05:33.659119+02:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-10-12T15:05:33.662842+02:00","level":"INFO","msg":"stream: starting","core version":"0.27.2"}
+{"time":"2026-10-12T15:05:33.983208+02:00","level":"INFO","msg":"stream: created new stream","id":"npsstjww"}
+{"time":"2026-10-12T15:05:33.983251+02:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-10-12T15:05:33.983374+02:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-10-12T15:05:33.983377+02:00","level":"INFO","msg":"writer: started","stream_id":"npsstjww"}
+{"time":"2026-10-12T15:05:33.983388+02:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-10-12T15:05:34.454243+02:00","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":0,"console_lines":1}
+{"time":"2026-10-12T15:05:34.715627+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-12T15:05:49.454583+02:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":0,"events_lines":2,"console_offset":1,"console_lines":170,"uploaded_len":2}
+{"time":"2026-10-12T15:05:49.78334+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}

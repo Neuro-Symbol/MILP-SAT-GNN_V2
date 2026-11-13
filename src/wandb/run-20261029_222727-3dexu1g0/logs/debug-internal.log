@@ -1,0 +1,394 @@
+{"time":"2026-10-29T22:27:27.218185+01:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-10-29T22:27:27.219592+01:00","level":"INFO","msg":"stream: starting","core version":"0.27.2"}
+{"time":"2026-10-29T22:27:27.55019+01:00","level":"INFO","msg":"stream: created new stream","id":"3dexu1g0"}
+{"time":"2026-10-29T22:27:27.550376+01:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-10-29T22:27:27.550835+01:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-10-29T22:27:27.550843+01:00","level":"INFO","msg":"writer: started","stream_id":"3dexu1g0"}
+{"time":"2026-10-29T22:27:27.550996+01:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-10-29T22:27:27.990812+01:00","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":0,"console_lines":1}
+{"time":"2026-10-29T22:27:28.343614+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:27:42.991+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":0,"events_lines":2,"console_offset":1,"console_lines":141,"uploaded_len":2}
+{"time":"2026-10-29T22:27:43.308778+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:27:57.990888+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":2,"events_lines":2,"console_offset":123,"console_lines":1}
+{"time":"2026-10-29T22:27:58.420988+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:28:12.991123+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":0,"history_lines":1,"events_offset":4,"events_lines":2,"console_offset":142,"console_lines":62}
+{"time":"2026-10-29T22:28:13.475857+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:28:27.991843+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":1,"history_lines":1,"events_offset":6,"events_lines":2,"console_offset":203,"console_lines":32}
+{"time":"2026-10-29T22:28:28.321949+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:28:42.991779+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":8,"events_lines":2,"console_offset":234,"console_lines":1}
+{"time":"2026-10-29T22:28:43.374849+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:28:57.991774+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":2,"history_lines":1,"events_offset":10,"events_lines":2,"console_offset":234,"console_lines":32}
+{"time":"2026-10-29T22:28:58.325266+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:29:12.991834+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":3,"history_lines":1,"events_offset":12,"events_lines":2,"console_offset":265,"console_lines":4}
+{"time":"2026-10-29T22:29:13.26951+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:29:27.991859+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":14,"events_lines":2,"console_offset":268,"console_lines":35}
+{"time":"2026-10-29T22:29:28.280626+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:29:42.991811+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":16,"events_lines":2,"console_offset":302,"console_lines":1}
+{"time":"2026-10-29T22:29:43.381518+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:29:57.99192+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":4,"history_lines":1,"events_offset":18,"events_lines":2,"console_offset":302,"console_lines":32}
+{"time":"2026-10-29T22:29:58.33289+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:30:12.991911+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":5,"history_lines":1,"events_offset":20,"events_lines":2,"console_offset":333,"console_lines":31}
+{"time":"2026-10-29T22:30:13.270022+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:30:27.991878+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":22,"events_lines":2,"console_offset":363,"console_lines":1}
+{"time":"2026-10-29T22:30:28.3354+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:30:42.99198+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":6,"history_lines":1,"events_offset":24,"events_lines":2,"console_offset":363,"console_lines":32}
+{"time":"2026-10-29T22:30:44.002552+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:30:57.991106+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":26,"events_lines":2,"console_offset":394,"console_lines":1}
+{"time":"2026-10-29T22:30:58.338547+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:31:12.992005+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":7,"history_lines":1,"events_offset":28,"events_lines":2,"console_offset":394,"console_lines":32}
+{"time":"2026-10-29T22:31:13.268299+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:31:27.991977+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":30,"events_lines":2,"console_offset":425,"console_lines":1}
+{"time":"2026-10-29T22:31:28.342053+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:31:42.991959+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":8,"history_lines":1,"events_offset":32,"events_lines":2,"console_offset":425,"console_lines":4}
+{"time":"2026-10-29T22:31:43.262792+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:31:57.992045+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":34,"events_lines":2,"console_offset":428,"console_lines":37}
+{"time":"2026-10-29T22:31:58.251997+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:32:12.992036+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":36,"events_lines":2,"console_offset":464,"console_lines":1}
+{"time":"2026-10-29T22:32:13.244996+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:32:27.992101+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":9,"history_lines":1,"events_offset":38,"events_lines":2,"console_offset":464,"console_lines":31}
+{"time":"2026-10-29T22:32:28.492541+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:32:42.992057+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":40,"events_lines":2,"console_offset":494,"console_lines":1}
+{"time":"2026-10-29T22:32:43.363309+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:32:57.992115+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":10,"history_lines":1,"events_offset":42,"events_lines":2,"console_offset":494,"console_lines":31}
+{"time":"2026-10-29T22:32:58.256456+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:33:12.991333+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":44,"events_lines":2,"console_offset":524,"console_lines":1}
+{"time":"2026-10-29T22:33:13.259445+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:33:27.99217+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":11,"history_lines":1,"events_offset":46,"events_lines":2,"console_offset":524,"console_lines":31}
+{"time":"2026-10-29T22:33:28.240623+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:33:42.992144+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":48,"events_lines":2,"console_offset":554,"console_lines":1}
+{"time":"2026-10-29T22:33:43.305498+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:33:57.991601+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":12,"history_lines":1,"events_offset":50,"events_lines":2,"console_offset":554,"console_lines":31}
+{"time":"2026-10-29T22:33:58.358588+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:34:12.992129+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":52,"events_lines":2,"console_offset":584,"console_lines":1}
+{"time":"2026-10-29T22:34:13.30886+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:34:27.992174+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":13,"history_lines":1,"events_offset":54,"events_lines":2,"console_offset":584,"console_lines":4}
+{"time":"2026-10-29T22:34:28.362898+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:34:42.992264+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":56,"events_lines":2,"console_offset":587,"console_lines":35}
+{"time":"2026-10-29T22:34:43.312216+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:34:57.991481+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":14,"history_lines":1,"events_offset":58,"events_lines":2,"console_offset":621,"console_lines":4}
+{"time":"2026-10-29T22:34:58.365416+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:35:12.992181+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":60,"events_lines":2,"console_offset":624,"console_lines":29}
+{"time":"2026-10-29T22:35:13.315592+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:35:27.992237+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":62,"events_lines":2,"console_offset":652,"console_lines":1}
+{"time":"2026-10-29T22:35:28.3688+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:35:42.992281+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":15,"history_lines":1,"events_offset":64,"events_lines":2,"console_offset":652,"console_lines":31}
+{"time":"2026-10-29T22:35:43.318857+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:35:57.992366+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":66,"events_lines":2,"console_offset":682,"console_lines":1}
+{"time":"2026-10-29T22:35:58.372671+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:36:12.992317+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":16,"history_lines":1,"events_offset":68,"events_lines":2,"console_offset":682,"console_lines":31}
+{"time":"2026-10-29T22:36:13.424545+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:36:27.992291+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":70,"events_lines":2,"console_offset":712,"console_lines":1}
+{"time":"2026-10-29T22:36:28.271002+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:36:42.992404+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":17,"history_lines":1,"events_offset":72,"events_lines":2,"console_offset":712,"console_lines":31}
+{"time":"2026-10-29T22:36:43.29152+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:36:57.991851+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":74,"events_lines":2,"console_offset":742,"console_lines":1}
+{"time":"2026-10-29T22:36:58.272434+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:37:12.992378+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":18,"history_lines":1,"events_offset":76,"events_lines":2,"console_offset":742,"console_lines":4}
+{"time":"2026-10-29T22:37:13.329348+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:37:27.992418+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":78,"events_lines":2,"console_offset":745,"console_lines":36}
+{"time":"2026-10-29T22:37:28.384471+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:37:42.992365+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":80,"events_lines":2,"console_offset":780,"console_lines":1}
+{"time":"2026-10-29T22:37:43.526021+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:37:57.99245+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":19,"history_lines":1,"events_offset":82,"events_lines":2,"console_offset":780,"console_lines":31}
+{"time":"2026-10-29T22:37:58.285292+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:38:12.992318+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":84,"events_lines":2,"console_offset":810,"console_lines":1}
+{"time":"2026-10-29T22:38:13.44082+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:38:27.991852+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":86,"events_lines":2,"console_offset":810,"console_lines":1}
+{"time":"2026-10-29T22:38:28.321067+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:38:42.992515+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":20,"history_lines":1,"events_offset":88,"events_lines":2,"console_offset":810,"console_lines":32}
+{"time":"2026-10-29T22:38:43.352279+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:38:57.992449+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":90,"events_lines":2,"console_offset":841,"console_lines":1}
+{"time":"2026-10-29T22:38:58.392178+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:39:12.992564+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":21,"history_lines":1,"events_offset":92,"events_lines":2,"console_offset":841,"console_lines":32}
+{"time":"2026-10-29T22:39:13.374588+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:39:27.992488+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":94,"events_lines":2,"console_offset":872,"console_lines":1}
+{"time":"2026-10-29T22:39:28.394936+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:39:42.992579+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":22,"history_lines":1,"events_offset":96,"events_lines":2,"console_offset":872,"console_lines":31}
+{"time":"2026-10-29T22:39:44.056411+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:39:57.992371+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":98,"events_lines":2,"console_offset":902,"console_lines":1}
+{"time":"2026-10-29T22:39:58.351893+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:40:12.992574+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":100,"events_lines":2,"console_offset":902,"console_lines":1}
+{"time":"2026-10-29T22:40:13.294068+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:40:27.992673+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":23,"history_lines":1,"events_offset":102,"events_lines":2,"console_offset":902,"console_lines":4}
+{"time":"2026-10-29T22:40:28.332099+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:40:42.992563+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":104,"events_lines":2,"console_offset":905,"console_lines":35}
+{"time":"2026-10-29T22:40:43.243155+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:40:57.992596+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":106,"events_lines":2,"console_offset":939,"console_lines":1}
+{"time":"2026-10-29T22:40:58.260218+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:41:12.99269+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":24,"history_lines":1,"events_offset":108,"events_lines":2,"console_offset":939,"console_lines":31}
+{"time":"2026-10-29T22:41:13.457672+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:41:27.992585+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":110,"events_lines":2,"console_offset":969,"console_lines":1}
+{"time":"2026-10-29T22:41:28.306418+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:41:42.992637+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":112,"events_lines":2,"console_offset":969,"console_lines":1}
+{"time":"2026-10-29T22:41:43.387871+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:41:57.992696+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":25,"history_lines":1,"events_offset":114,"events_lines":2,"console_offset":969,"console_lines":32}
+{"time":"2026-10-29T22:41:58.344868+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:42:12.992655+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":116,"events_lines":2,"console_offset":1000,"console_lines":1}
+{"time":"2026-10-29T22:42:13.425051+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:42:27.99271+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":26,"history_lines":1,"events_offset":118,"events_lines":2,"console_offset":1000,"console_lines":4}
+{"time":"2026-10-29T22:42:28.272921+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:42:42.99301+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":120,"events_lines":2,"console_offset":1003,"console_lines":28}
+{"time":"2026-10-29T22:42:43.365018+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:42:57.991941+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":122,"events_lines":2,"console_offset":1030,"console_lines":1}
+{"time":"2026-10-29T22:42:58.295303+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:43:12.992775+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":27,"history_lines":1,"events_offset":124,"events_lines":2,"console_offset":1030,"console_lines":31}
+{"time":"2026-10-29T22:43:13.264661+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:43:27.992752+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":126,"events_lines":2,"console_offset":1060,"console_lines":1}
+{"time":"2026-10-29T22:43:28.319367+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:43:42.992833+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":28,"history_lines":1,"events_offset":128,"events_lines":2,"console_offset":1060,"console_lines":4}
+{"time":"2026-10-29T22:43:43.371636+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:43:57.992797+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":130,"events_lines":2,"console_offset":1063,"console_lines":8}
+{"time":"2026-10-29T22:43:58.424668+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:44:12.992887+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":132,"events_lines":2,"console_offset":1070,"console_lines":29}
+{"time":"2026-10-29T22:44:13.375935+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:44:27.992822+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":134,"events_lines":2,"console_offset":1098,"console_lines":1}
+{"time":"2026-10-29T22:44:28.454144+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:44:42.992961+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":29,"history_lines":1,"events_offset":136,"events_lines":2,"console_offset":1098,"console_lines":31}
+{"time":"2026-10-29T22:44:43.37711+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:44:57.99288+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":138,"events_lines":2,"console_offset":1128,"console_lines":1}
+{"time":"2026-10-29T22:44:58.328717+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:45:12.992897+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":30,"history_lines":1,"events_offset":140,"events_lines":2,"console_offset":1128,"console_lines":32}
+{"time":"2026-10-29T22:45:13.30034+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:45:27.992902+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":142,"events_lines":2,"console_offset":1159,"console_lines":1}
+{"time":"2026-10-29T22:45:28.381466+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:45:42.992301+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":31,"history_lines":1,"events_offset":144,"events_lines":2,"console_offset":1159,"console_lines":31}
+{"time":"2026-10-29T22:45:43.283883+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:45:57.992885+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":146,"events_lines":2,"console_offset":1189,"console_lines":1}
+{"time":"2026-10-29T22:45:58.24689+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:46:12.99294+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":148,"events_lines":2,"console_offset":1189,"console_lines":1}
+{"time":"2026-10-29T22:46:13.365847+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:46:27.993019+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":32,"history_lines":1,"events_offset":150,"events_lines":2,"console_offset":1189,"console_lines":31}
+{"time":"2026-10-29T22:46:28.324785+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:46:42.992993+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":152,"events_lines":2,"console_offset":1219,"console_lines":1}
+{"time":"2026-10-29T22:46:43.372384+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:46:57.992972+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":33,"history_lines":1,"events_offset":154,"events_lines":2,"console_offset":1219,"console_lines":4}
+{"time":"2026-10-29T22:46:58.35737+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:47:06.90663+01:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":5236}
+{"time":"2026-10-29T22:47:06.909754+01:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-10-29T22:47:12.993033+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":156,"events_lines":2,"console_offset":1222,"console_lines":35}
+{"time":"2026-10-29T22:47:13.483407+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:47:27.992992+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":158,"events_lines":2,"console_offset":1256,"console_lines":1}
+{"time":"2026-10-29T22:47:28.333448+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:47:42.993068+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":34,"history_lines":1,"events_offset":160,"events_lines":2,"console_offset":1256,"console_lines":31}
+{"time":"2026-10-29T22:47:43.560669+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:47:57.993057+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":162,"events_lines":2,"console_offset":1286,"console_lines":1}
+{"time":"2026-10-29T22:47:58.314974+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:48:12.993085+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":35,"history_lines":1,"events_offset":164,"events_lines":2,"console_offset":1286,"console_lines":14}
+{"time":"2026-10-29T22:48:13.373168+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:48:27.99312+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":166,"events_lines":2,"console_offset":1300,"console_lines":17}
+{"time":"2026-10-29T22:48:28.568043+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:48:42.996388+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":36,"history_lines":1,"events_offset":168,"events_lines":2,"console_offset":1316,"console_lines":4}
+{"time":"2026-10-29T22:48:43.42692+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:48:57.993121+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":170,"events_lines":2,"console_offset":1319,"console_lines":28}
+{"time":"2026-10-29T22:48:58.349388+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:49:12.993243+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":37,"history_lines":1,"events_offset":172,"events_lines":2,"console_offset":1346,"console_lines":14}
+{"time":"2026-10-29T22:49:13.409509+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:49:27.993151+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":174,"events_lines":2,"console_offset":1360,"console_lines":17}
+{"time":"2026-10-29T22:49:28.373988+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:49:42.9932+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":38,"history_lines":1,"events_offset":176,"events_lines":2,"console_offset":1376,"console_lines":4}
+{"time":"2026-10-29T22:49:43.390159+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:49:57.992903+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":178,"events_lines":2,"console_offset":1379,"console_lines":1}
+{"time":"2026-10-29T22:49:58.276463+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:50:12.992658+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":180,"events_lines":2,"console_offset":1379,"console_lines":36}
+{"time":"2026-10-29T22:50:13.415372+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:50:27.991754+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":182,"events_lines":2,"console_offset":1414,"console_lines":1}
+{"time":"2026-10-29T22:50:28.258944+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:50:42.992608+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":39,"history_lines":1,"events_offset":184,"events_lines":2,"console_offset":1414,"console_lines":31}
+{"time":"2026-10-29T22:50:43.293017+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:50:57.992523+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":40,"history_lines":1,"events_offset":186,"events_lines":2,"console_offset":1444,"console_lines":15}
+{"time":"2026-10-29T22:50:58.35633+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:51:12.991717+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":188,"events_lines":2,"console_offset":1459,"console_lines":17}
+{"time":"2026-10-29T22:51:13.294945+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:51:27.992555+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":41,"history_lines":1,"events_offset":190,"events_lines":2,"console_offset":1475,"console_lines":14}
+{"time":"2026-10-29T22:51:28.373053+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:51:42.992529+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":192,"events_lines":2,"console_offset":1489,"console_lines":17}
+{"time":"2026-10-29T22:51:43.321364+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:51:57.992728+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":42,"history_lines":1,"events_offset":194,"events_lines":2,"console_offset":1505,"console_lines":31}
+{"time":"2026-10-29T22:51:58.29058+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:52:12.992633+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":196,"events_lines":2,"console_offset":1535,"console_lines":1}
+{"time":"2026-10-29T22:52:13.313601+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:52:27.992959+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":43,"history_lines":1,"events_offset":198,"events_lines":2,"console_offset":1535,"console_lines":4}
+{"time":"2026-10-29T22:52:28.377444+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:52:42.992629+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":200,"events_lines":2,"console_offset":1538,"console_lines":35}
+{"time":"2026-10-29T22:52:43.554139+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:52:57.99258+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":202,"events_lines":2,"console_offset":1572,"console_lines":1}
+{"time":"2026-10-29T22:52:58.484078+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:53:12.992638+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":44,"history_lines":1,"events_offset":204,"events_lines":2,"console_offset":1572,"console_lines":4}
+{"time":"2026-10-29T22:53:13.268153+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:53:27.992196+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":206,"events_lines":2,"console_offset":1575,"console_lines":28}
+{"time":"2026-10-29T22:53:28.269269+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:53:42.992639+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":208,"events_lines":2,"console_offset":1602,"console_lines":1}
+{"time":"2026-10-29T22:53:43.304248+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:53:57.992698+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":45,"history_lines":1,"events_offset":210,"events_lines":2,"console_offset":1602,"console_lines":32}
+{"time":"2026-10-29T22:53:58.423519+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:54:12.992699+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":212,"events_lines":2,"console_offset":1633,"console_lines":1}
+{"time":"2026-10-29T22:54:13.337723+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:54:27.993423+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":46,"history_lines":1,"events_offset":214,"events_lines":2,"console_offset":1633,"console_lines":31}
+{"time":"2026-10-29T22:54:28.289351+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:54:42.992698+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":216,"events_lines":2,"console_offset":1663,"console_lines":1}
+{"time":"2026-10-29T22:54:43.340939+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:54:57.992747+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":47,"history_lines":1,"events_offset":218,"events_lines":2,"console_offset":1663,"console_lines":31}
+{"time":"2026-10-29T22:54:58.393825+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:55:12.992743+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":220,"events_lines":2,"console_offset":1693,"console_lines":1}
+{"time":"2026-10-29T22:55:13.388875+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:55:27.992359+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":48,"history_lines":1,"events_offset":222,"events_lines":2,"console_offset":1693,"console_lines":4}
+{"time":"2026-10-29T22:55:28.706606+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:55:42.992873+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":224,"events_lines":2,"console_offset":1696,"console_lines":36}
+{"time":"2026-10-29T22:55:43.450046+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:55:57.992759+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":226,"events_lines":2,"console_offset":1731,"console_lines":1}
+{"time":"2026-10-29T22:55:58.298379+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:56:12.992808+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":49,"history_lines":1,"events_offset":228,"events_lines":2,"console_offset":1731,"console_lines":31}
+{"time":"2026-10-29T22:56:13.345504+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:56:27.993806+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":230,"events_lines":2,"console_offset":1761,"console_lines":1}
+{"time":"2026-10-29T22:56:28.274226+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T22:57:06.338568+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":50,"history_lines":1,"events_offset":232,"events_lines":2,"console_offset":1761,"console_lines":14}
+{"time":"2026-10-29T22:57:06.701637+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T23:06:31.946274+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":234,"events_lines":2,"console_offset":1775,"console_lines":17}
+{"time":"2026-10-29T23:07:37.750944+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53743->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-29T23:08:05.956592+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T23:08:05.956737+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":236,"events_lines":2,"console_offset":1791,"console_lines":1}
+{"time":"2026-10-29T23:08:06.198936+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T23:08:37.565475+01:00","level":"INFO","msg":"filestream: sending request","total_files":3,"history_offset":51,"history_lines":1,"console_offset":1791,"console_lines":15}
+{"time":"2026-10-29T23:08:38.154216+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T23:56:33.42889+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":238,"events_lines":4,"console_offset":1806,"console_lines":17}
+{"time":"2026-10-29T23:58:17.006901+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53811->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-29T23:58:19.65681+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T23:58:19.65697+01:00","level":"INFO","msg":"filestream: sending request","total_files":0}
+{"time":"2026-10-29T23:58:19.890853+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T23:58:19.890999+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":52,"history_lines":1,"events_offset":242,"events_lines":4,"console_offset":1822,"console_lines":31}
+{"time":"2026-10-29T23:58:20.156135+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-29T23:58:20.495925+01:00","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":1852,"console_lines":1}
+{"time":"2026-10-29T23:58:20.724468+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T00:14:22.200884+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":246,"events_lines":2,"console_offset":1852,"console_lines":1}
+{"time":"2026-10-30T00:15:30.021475+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53826->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T00:15:32.533542+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T00:15:32.533709+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":53,"history_lines":1,"events_offset":248,"events_lines":2,"console_offset":1852,"console_lines":4}
+{"time":"2026-10-30T00:15:32.777399+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T00:16:06.950677+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":250,"events_lines":2,"console_offset":1855,"console_lines":35}
+{"time":"2026-10-30T00:16:07.43004+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T00:17:11.760981+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":252,"events_lines":2,"console_offset":1889,"console_lines":1}
+{"time":"2026-10-30T00:17:12.019693+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T00:54:26.185007+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":254,"events_lines":2,"console_offset":1889,"console_lines":1}
+{"time":"2026-10-30T00:55:09.048122+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53831->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T00:55:36.793904+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T00:55:36.794059+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":54,"history_lines":1,"events_offset":256,"events_lines":2,"console_offset":1889,"console_lines":31}
+{"time":"2026-10-30T00:55:37.070273+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T00:55:46.822768+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":258,"events_lines":2,"console_offset":1919,"console_lines":1}
+{"time":"2026-10-30T00:55:47.06834+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T01:13:08.605345+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":55,"history_lines":1,"events_offset":260,"events_lines":2,"console_offset":1919,"console_lines":31}
+{"time":"2026-10-30T01:14:16.412609+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53845->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T01:14:43.908799+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T01:14:43.908921+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":262,"events_lines":2,"console_offset":1949,"console_lines":1}
+{"time":"2026-10-30T01:14:44.16245+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T01:15:18.181036+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":56,"history_lines":1,"events_offset":264,"events_lines":2,"console_offset":1949,"console_lines":31}
+{"time":"2026-10-30T01:15:18.458949+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T02:09:53.175881+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":266,"events_lines":2,"console_offset":1979,"console_lines":1}
+{"time":"2026-10-30T02:11:01.043607+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53852->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T02:11:29.302488+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T02:11:29.302641+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":268,"events_lines":2,"console_offset":1979,"console_lines":1}
+{"time":"2026-10-30T02:11:29.559007+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T02:12:02.684362+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":57,"history_lines":1,"events_offset":270,"events_lines":2,"console_offset":1979,"console_lines":31}
+{"time":"2026-10-30T02:12:02.992006+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T02:28:08.277411+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":272,"events_lines":2,"console_offset":2009,"console_lines":1}
+{"time":"2026-10-30T02:28:51.224381+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53866->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T02:28:54.059027+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T02:28:54.059193+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":58,"history_lines":1,"events_offset":274,"events_lines":2,"console_offset":2009,"console_lines":4}
+{"time":"2026-10-30T02:28:54.307126+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T02:44:28.997438+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":276,"events_lines":2,"console_offset":2012,"console_lines":36}
+{"time":"2026-10-30T02:45:11.886747+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53873->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T02:45:14.758955+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T02:45:14.759172+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":278,"events_lines":2,"console_offset":2047,"console_lines":1}
+{"time":"2026-10-30T02:45:15.089528+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T02:45:48.765599+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":280,"events_lines":2,"console_offset":2047,"console_lines":1}
+{"time":"2026-10-30T02:45:49.055422+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:01:29.518088+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":59,"history_lines":1,"events_offset":282,"events_lines":2,"console_offset":2047,"console_lines":31}
+{"time":"2026-10-30T03:02:12.420857+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53894->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T03:02:40.51857+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:02:40.518716+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":284,"events_lines":2,"console_offset":2077,"console_lines":1}
+{"time":"2026-10-30T03:02:40.766473+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:03:14.17901+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":286,"events_lines":2,"console_offset":2077,"console_lines":1}
+{"time":"2026-10-30T03:03:14.431901+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:19:19.919648+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":60,"history_lines":1,"events_offset":288,"events_lines":2,"console_offset":2077,"console_lines":32}
+{"time":"2026-10-30T03:20:27.684562+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53899->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T03:20:30.324384+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:20:30.324531+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":290,"events_lines":2,"console_offset":2108,"console_lines":1}
+{"time":"2026-10-30T03:20:30.687989+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:21:04.550341+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":61,"history_lines":1,"events_offset":292,"events_lines":2,"console_offset":2108,"console_lines":14}
+{"time":"2026-10-30T03:21:04.798662+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:37:10.199649+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":294,"events_lines":2,"console_offset":2122,"console_lines":17}
+{"time":"2026-10-30T03:38:17.989489+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53912->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T03:38:20.794639+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:38:20.794735+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":296,"events_lines":2,"console_offset":2138,"console_lines":1}
+{"time":"2026-10-30T03:38:21.068745+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:38:30.649888+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":62,"history_lines":1,"events_offset":298,"events_lines":2,"console_offset":2138,"console_lines":31}
+{"time":"2026-10-30T03:38:30.953059+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:54:36.292677+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":300,"events_lines":2,"console_offset":2168,"console_lines":1}
+{"time":"2026-10-30T03:56:09.49912+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53919->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T03:56:12.431883+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:56:12.432027+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":63,"history_lines":1,"events_offset":302,"events_lines":2,"console_offset":2168,"console_lines":4}
+{"time":"2026-10-30T03:56:12.701452+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T03:56:45.828342+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":304,"events_lines":2,"console_offset":2171,"console_lines":1}
+{"time":"2026-10-30T03:56:46.073335+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T04:55:13.643777+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":306,"events_lines":2,"console_offset":2171,"console_lines":35}
+{"time":"2026-10-30T04:56:20.122065+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53932->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T04:56:22.959844+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T04:56:22.959997+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":308,"events_lines":2,"console_offset":2205,"console_lines":1}
+{"time":"2026-10-30T04:56:23.213967+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T04:56:55.816204+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":310,"events_lines":2,"console_offset":2205,"console_lines":1}
+{"time":"2026-10-30T04:56:56.054844+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T05:13:00.582163+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":64,"history_lines":1,"events_offset":312,"events_lines":2,"console_offset":2205,"console_lines":31}
+{"time":"2026-10-30T05:14:06.93642+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53947->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T05:14:10.002842+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T05:14:10.003014+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":314,"events_lines":2,"console_offset":2235,"console_lines":1}
+{"time":"2026-10-30T05:14:10.246825+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T05:29:43.90304+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":65,"history_lines":1,"events_offset":316,"events_lines":2,"console_offset":2235,"console_lines":32}
+{"time":"2026-10-30T05:30:49.840813+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53952->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T05:30:52.268862+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T05:30:52.269035+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":318,"events_lines":2,"console_offset":2266,"console_lines":1}
+{"time":"2026-10-30T05:30:52.535008+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T05:46:26.688516+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":320,"events_lines":2,"console_offset":2266,"console_lines":1}
+{"time":"2026-10-30T05:47:32.16857+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53965->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T05:47:35.155767+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T05:47:35.156004+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":66,"history_lines":1,"events_offset":322,"events_lines":2,"console_offset":2266,"console_lines":31}
+{"time":"2026-10-30T05:47:36.038344+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T05:48:09.044978+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":324,"events_lines":2,"console_offset":2296,"console_lines":1}
+{"time":"2026-10-30T05:48:09.292618+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T06:03:50.49464+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":326,"events_lines":2,"console_offset":2296,"console_lines":1}
+{"time":"2026-10-30T06:04:55.933958+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53970->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T06:05:23.195649+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T06:05:23.195831+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":67,"history_lines":1,"events_offset":328,"events_lines":2,"console_offset":2296,"console_lines":32}
+{"time":"2026-10-30T06:05:23.462741+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T06:05:55.854571+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":330,"events_lines":2,"console_offset":2327,"console_lines":1}
+{"time":"2026-10-30T06:05:56.090677+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T06:56:09.044018+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":332,"events_lines":2,"console_offset":2327,"console_lines":1}
+{"time":"2026-10-30T07:50:13.664677+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:53983->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T07:50:16.764125+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T07:50:18.232434+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":68,"history_lines":1,"events_offset":334,"events_lines":2,"console_offset":2327,"console_lines":4}
+{"time":"2026-10-30T07:50:18.498821+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T07:50:56.251133+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":336,"events_lines":2,"console_offset":2330,"console_lines":1}
+{"time":"2026-10-30T07:50:56.560297+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T07:57:14.522163+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":338,"events_lines":2,"console_offset":2330,"console_lines":36}
+{"time":"2026-10-30T07:58:19.788301+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:54008->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T07:58:22.744542+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T07:58:22.744654+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":340,"events_lines":2,"console_offset":2365,"console_lines":1}
+{"time":"2026-10-30T07:58:23.033684+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T07:58:55.224948+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":69,"history_lines":1,"events_offset":342,"events_lines":2,"console_offset":2365,"console_lines":4}
+{"time":"2026-10-30T07:58:55.505546+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T08:53:30.457068+01:00","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":344,"events_lines":2,"console_offset":2368,"console_lines":28}
+{"time":"2026-10-30T09:06:38.510634+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/riccardo-paoli-consiglio-nazionale-delle-ricerche/milp-gnn/3dexu1g0/file_stream\": read tcp 192.168.1.2:54009->34.8.250.101:443: read: operation timed out"}
+{"time":"2026-10-30T09:06:41.400536+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T09:06:41.400681+01:00","level":"INFO","msg":"filestream: sending request","total_files":0}
+{"time":"2026-10-30T09:06:41.622983+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T09:06:41.62321+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":70,"history_lines":3,"events_offset":346,"events_lines":18,"console_offset":2395,"console_lines":91}
+{"time":"2026-10-30T09:06:42.018413+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T09:06:42.018519+01:00","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":2485,"console_lines":1}
+{"time":"2026-10-30T09:06:42.255845+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T09:06:56.883805+01:00","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":73,"history_lines":1,"events_offset":364,"events_lines":2,"console_offset":2485,"console_lines":4}
+{"time":"2026-10-30T09:06:57.118884+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T09:07:00.551762+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-10-30T09:07:00.551907+01:00","level":"INFO","msg":"filestream: sending request","total_files":3,"history_offset":74,"history_lines":1,"console_offset":2488,"console_lines":75,"uploaded_len":3,"complete":true,"exit_code":255}
+{"time":"2026-10-30T09:07:01.020781+01:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-30T09:07:01.020853+01:00","level":"INFO","msg":"stream: finishing up"}
+{"time":"2026-10-30T09:07:01.020861+01:00","level":"INFO","msg":"handler: closed"}
+{"time":"2026-10-30T09:07:01.02091+01:00","level":"INFO","msg":"sender: closed"}
+{"time":"2026-10-30T09:07:01.020914+01:00","level":"INFO","msg":"stream: all finished"}

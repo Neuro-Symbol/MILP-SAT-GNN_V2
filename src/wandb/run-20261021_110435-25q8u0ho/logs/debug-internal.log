@@ -1,0 +1,17 @@
+{"time":"2026-10-21T11:04:35.032811+02:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-10-21T11:04:35.033002+02:00","level":"INFO","msg":"stream: starting","core version":"0.27.2"}
+{"time":"2026-10-21T11:04:35.345303+02:00","level":"INFO","msg":"stream: created new stream","id":"25q8u0ho"}
+{"time":"2026-10-21T11:04:35.345403+02:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-10-21T11:04:35.345661+02:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-10-21T11:04:35.345663+02:00","level":"INFO","msg":"writer: started","stream_id":"25q8u0ho"}
+{"time":"2026-10-21T11:04:35.345684+02:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-10-21T11:04:35.831596+02:00","level":"INFO","msg":"filestream: sending request","total_files":1,"console_offset":0,"console_lines":1}
+{"time":"2026-10-21T11:04:36.122175+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-21T11:04:43.188152+02:00","level":"INFO","msg":"api: retrying HTTP error","status":503,"url":"https://api.wandb.ai/graphql","body":"upstream connect error or disconnect/reset before headers. reset reason: connection termination"}
+{"time":"2026-10-21T11:04:46.250176+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-10-21T11:04:46.252303+02:00","level":"INFO","msg":"filestream: sending request","total_files":3,"history_offset":0,"history_lines":4,"console_offset":1,"console_lines":283,"uploaded_len":5,"complete":true,"exit_code":1}
+{"time":"2026-10-21T11:04:46.521456+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-21T11:04:46.521809+02:00","level":"INFO","msg":"stream: finishing up"}
+{"time":"2026-10-21T11:04:46.521893+02:00","level":"INFO","msg":"handler: closed"}
+{"time":"2026-10-21T11:04:46.522388+02:00","level":"INFO","msg":"sender: closed"}
+{"time":"2026-10-21T11:04:46.522448+02:00","level":"INFO","msg":"stream: all finished"}
