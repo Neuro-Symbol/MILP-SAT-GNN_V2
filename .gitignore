@@ -1,0 +1,89 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Machine learning / PyTorch
+# =========================
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+
+.venv/
+G4SATBench/
+MILPEXP/
+SATLIB/
+src_old/
+wandb/
+
+G4SATBench_ricca/
+G4SATBench_old/
+G4SATBench_straccia/
+MILPEXP_old/
+src_straccia/
+
+!.gitignore
+
