@@ -73,17 +73,11 @@ Desktop.ini
 
 
 .venv/
-G4SATBench/
 MILPEXP/
 SATLIB/
 src_old/
 wandb/
 
-G4SATBench_ricca/
-G4SATBench_old/
-G4SATBench_straccia/
-MILPEXP_old/
-src_straccia/
 
 !.gitignore
 
